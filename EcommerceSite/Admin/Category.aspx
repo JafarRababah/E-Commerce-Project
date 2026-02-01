@@ -109,7 +109,8 @@
                               <td>  <asp:LinkButton ID="lbEdit" runat="server" CssClass="badge badge-primary"
                                   CommandArgument='<%# Eval("CategoryID") %>' CommandName="edit" CausesValidation="False"><i class="fas fa-edit"></i></asp:LinkButton>
                                    <asp:LinkButton ID="lbDelete" runat="server" CssClass="badge badge-danger" 
-                                       CommandArgument='<%# Eval("CategoryID") %>' CommandName="delete" CausesValidation="False"><i class="fas fa-trash-alt"></i></asp:LinkButton>
+                                       CommandArgument='<%# Eval("CategoryID") %>' CommandName="delete" CausesValidation="False"
+                                       onClientClick="return confirm ('Do you want delete this Category?');"><i class="fas fa-trash-alt"></i></asp:LinkButton>
 
                             
                            

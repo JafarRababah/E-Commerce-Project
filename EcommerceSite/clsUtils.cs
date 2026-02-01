@@ -5,17 +5,15 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Configuration;
+using System.IO;
+using System.Web.UI.WebControls;
 
 namespace EcommerceSite
 {
 
     public class clsUtils
     {
-        SqlConnection con;
-        SqlCommand cmd;
-        SqlDataAdapter adapter;
-        SqlDataReader reader;
-        DataTable tbl;
+       
 
         public static string GetConnection()
         {
@@ -53,6 +51,27 @@ namespace EcommerceSite
             }
             return rul1;
         }
+        public static string[] getImagePath(string[] images)
+        {
+            List<string> list = new List<string>();
+            string fileExtentiom = string.Empty;
+            for (int i = 0; i < images.Length; i++)
+            {
+                fileExtentiom=Path.GetExtension(images[i]).Trim();
+                list.Add("Images/Product/" + GetUniqueID().ToString() + fileExtentiom);
+            }
+            return list.ToArray();
+        }
+        public static string getItemWithCommaSeparater(ListBox listBox)
+        {
+            string selectedItem = string.Empty;
+            foreach(var item in listBox.GetSelectedIndices())
+            {
+                selectedItem = listBox.Items[item].Text+",";
+            }
+            return selectedItem;
+        }
+
     }
 
 }

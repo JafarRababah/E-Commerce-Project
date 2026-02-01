@@ -20,15 +20,18 @@ namespace EcommerceSite.Admin
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adapter;
-        SqlDataReader reader;
         DataTable tbl;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["breakCumbTitle"] = "Manager Category";
+            Session["breakCumbTitle"] = "Manage Category";
             Session["breakCumbPage"] = "Category";
+            if (!IsPostBack)
+            {
+                GetCategories();
+            }
             lblMsg.Visible = false;
-            GetCategories();
+            
         }
         protected void rCategory_ItemCommand(object source, RepeaterCommandEventArgs e)
         {

@@ -16,11 +16,14 @@
             <div class="col-sm-12 col-md-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">
+            <%--<h4 class="card-title">
                 Product List
-            </h4><hr/>
+            </h4><hr/>--%>
+            <a href="Product.aspx" class="card-title text-primary m-0 d-flex alert-items-end justify-content-end">
+                <i class="fas fa-plus-circle">Add New</i>
+            </a>
             <div class="table-responsive">
-                <asp:Repeater ID="rProductList" runat="server" OnItemCommand="rProductList_ItemCommand">
+                <asp:Repeater ID="rProductList" runat="server" OnItemCommand="rProductList_ItemCommand" OnItemDataBound="rProductList_ItemDataBound">
                 <HeaderTemplate>
                     <table class="table datatable-export table-hover nowrap">
                         <thead>

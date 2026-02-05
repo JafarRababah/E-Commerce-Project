@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|c:\\users\\jafar\\mygithub\\e-commerce-project\\ecommercesite\\admin\\productlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\productlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\admin\\productlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\productlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|c:\\users\\jafar\\mygithub\\e-commerce-project\\ecommercesite\\admin\\productlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\productlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|c:\\users\\jafar\\mygithub\\e-commerce-project\\ecommercesite\\user\\shop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\user\\shop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\admin\\product.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\product.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\productobj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\productobj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|c:\\users\\jafar\\mygithub\\e-commerce-project\\ecommercesite\\admin\\product.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\product.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\admin\\subcategory.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\subcategory.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\admin\\category.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\category.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\admin\\subcategory.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|solutionrelative:ecommercesite\\admin\\subcategory.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86B2A18C-EED5-462B-8CD7-550EE3053D48}|EcommerceSite\\EcommerceSite.csproj|C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\ecommercesite\\admin\\subcategory.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -66,20 +70,33 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Shop.aspx",
+              "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\User\\Shop.aspx",
+              "RelativeDocumentMoniker": "EcommerceSite\\User\\Shop.aspx",
+              "ToolTip": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\User\\Shop.aspx",
+              "RelativeToolTip": "EcommerceSite\\User\\Shop.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-04T15:37:31.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProductList.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\ProductList.aspx.cs",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\ProductList.aspx.cs",
               "ToolTip": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\ProductList.aspx.cs",
               "RelativeToolTip": "EcommerceSite\\Admin\\ProductList.aspx.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwB8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T15:10:57.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductList.aspx",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\ProductList.aspx",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\ProductList.aspx",
@@ -98,7 +115,7 @@
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\Product.aspx.cs",
               "ToolTip": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\Product.aspx.cs",
               "RelativeToolTip": "EcommerceSite\\Admin\\Product.aspx.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwJ0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwFAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:00:26.18Z",
               "EditorCaption": ""
@@ -111,14 +128,13 @@
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\SubCategory.aspx.cs",
               "ToolTip": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\SubCategory.aspx.cs",
               "RelativeToolTip": "EcommerceSite\\Admin\\SubCategory.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCAAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:19:25.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T07:19:25.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SubCategory.aspx",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\SubCategory.aspx",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\SubCategory.aspx",
@@ -126,12 +142,11 @@
               "RelativeToolTip": "EcommerceSite\\Admin\\SubCategory.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-04T06:56:45.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T06:56:45.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Category.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\Category.aspx.cs",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\Category.aspx.cs",
@@ -139,25 +154,23 @@
               "RelativeToolTip": "EcommerceSite\\Admin\\Category.aspx.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAASwGgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:58:06.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T15:58:06.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProductObj.cs",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\ProductObj.cs",
               "RelativeDocumentMoniker": "EcommerceSite\\ProductObj.cs",
               "ToolTip": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\ProductObj.cs",
               "RelativeToolTip": "EcommerceSite\\ProductObj.cs",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAwwPwAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAAAowOYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:54:04.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T15:54:04.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Product.aspx",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\Product.aspx",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\Product.aspx",
@@ -165,12 +178,11 @@
               "RelativeToolTip": "EcommerceSite\\Admin\\Product.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-04T13:10:16.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T13:10:16.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Category.aspx",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\Category.aspx",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\Category.aspx",
@@ -178,12 +190,11 @@
               "RelativeToolTip": "EcommerceSite\\Admin\\Category.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-03T15:57:48.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T15:57:48.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Web.config",
               "RelativeDocumentMoniker": "EcommerceSite\\Web.config",
@@ -196,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Admin.Master",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\Admin\\Admin.Master",
               "RelativeDocumentMoniker": "EcommerceSite\\Admin\\Admin.Master",
@@ -209,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Cart.aspx",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\User\\Cart.aspx",
               "RelativeDocumentMoniker": "EcommerceSite\\User\\Cart.aspx",
@@ -221,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "clsUtils.cs",
               "DocumentMoniker": "C:\\Users\\Jafar\\MyGitHub\\E-Commerce-Project\\EcommerceSite\\clsUtils.cs",
               "RelativeDocumentMoniker": "EcommerceSite\\clsUtils.cs",

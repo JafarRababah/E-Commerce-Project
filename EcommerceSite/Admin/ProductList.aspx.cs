@@ -35,12 +35,12 @@ namespace EcommerceSite.Admin
             rProductList.DataSource = tbl;
             rProductList.DataBind();
         }
-        protected void rProductList_ItemCommand(object source, RepeaterCommandEventArgs e)
+        protected void rProductList_ItemDataBound(object source, RepeaterCommandEventArgs e)
         {
             lblMsg.Visible = false;
             if (e.CommandName == "edit")
             {
-                Response.Redirect("Product.asp+?Id" + e.CommandArgument);
+                Response.Redirect("Product.aspx?id=" + e.CommandArgument);
             }
             else if (e.CommandName == "delete")
             {
@@ -51,9 +51,39 @@ namespace EcommerceSite.Admin
                 cmd.Parameters.AddWithValue("@Action", "GetAllByID");
                 cmd.Parameters.AddWithValue("@ProductID", e.CommandArgument);
                 cmd.CommandType = CommandType.StoredProcedure;
-                con.Open();
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    lblMsg.Visible = true;
+                    lblMsg.Text = "Product deleted successfully";
+                    lblMsg.CssClass = "alert alert-success";
+                    GetProducts();
+                }
+                catch(Exception ex)
+                {
+                    lblMsg.Visible = true;
+                    lblMsg.Text = "Error : " + ex.Message;
+                    lblMsg.CssClass = "alert alert-danger";
 
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
         }
+        protected void rProductList_ItemDataCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem) {
+                Label lbQuatity = e.Item.FindControl("lblQuantity") as Label;
+                if (Convert.ToInt32(lbQuatity.Text) <= 5)
+                {
+                    lbQuatity.CssClass = "badge badge-danger";
+                    lbQuatity.ToolTip = "Item acout to be 'Out of Stock'";
+                }
+            }
+        }
+       
     }
 }

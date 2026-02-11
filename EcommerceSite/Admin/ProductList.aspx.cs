@@ -35,7 +35,7 @@ namespace EcommerceSite.Admin
             rProductList.DataSource = tbl;
             rProductList.DataBind();
         }
-        protected void rProductList_ItemDataBound(object source, RepeaterCommandEventArgs e)
+        protected void rProductList_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             lblMsg.Visible = false;
             if (e.CommandName == "edit")
@@ -73,7 +73,7 @@ namespace EcommerceSite.Admin
                 }
             }
         }
-        protected void rProductList_ItemDataCommand(object source, RepeaterCommandEventArgs e)
+        protected void rProductList_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem) {
                 Label lbQuatity = e.Item.FindControl("lblQuantity") as Label;

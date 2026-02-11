@@ -83,9 +83,11 @@ namespace EcommerceSite.User
             {
                 if (tbl.Rows.Count > 0)
                 {
+                    tbl.CaseSensitive = false;
                     dv = new DataView(tbl);
-                    var search = txtSearchInput.Value.Trim().Replace("'", "''");
+                    var search = txtSearchInput.Text.Trim().Replace("'", "''");
                     dv.RowFilter = $"ShortDescription LIKE '%{search}%'";
+
                     if (dv.Count > 0)
                     {
                         rProducts.DataSource = dv;
@@ -106,5 +108,64 @@ namespace EcommerceSite.User
                 rProducts.DataBind();
             }
         }
+       
+        protected void ddlSortBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ddlSortBy.SelectedIndex != 0)
+            {
+                tbl = (DataTable)Session["product"];
+                if(tbl != null)
+                {
+                    if(tbl.Rows.Count > 0)
+                    {
+                        dv = new DataView(tbl);
+                        if (ddlSortBy.SelectedIndex == 1)
+                        {
+                            dv.Sort = "CreateDate ASC";
+                        }
+                        else if (ddlSortBy.SelectedIndex == 2)
+                        {
+                            dv.Sort = "ShortDescription ASC";
+                        }
+                        else // Sort by price
+                        {
+                            dv.Sort = "Price ASC";
+                        }
+                        if (dv.Count>0) // Sort by price
+                        {
+                            rProducts.DataSource= dv;
+                        }
+                        else
+                        {
+                            rProducts.DataSource = dv;
+                            rProducts.FooterTemplate = null;
+                            rProducts.FooterTemplate = new CustomTemlate(ListItemType.Footer);
+                        }
+                        rProducts.DataBind();
+                    }
+                    else
+                    {
+                        rProducts.DataSource = dv;
+                        rProducts.FooterTemplate = null;
+                        rProducts.FooterTemplate = new CustomTemlate(ListItemType.Footer);
+                    }
+                }
+            }
+        }
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            rProducts.DataSource = null;
+            rProducts.DataSource = (DataTable)Session["product"];
+            rProducts.DataBind();
+            txtSearchInput.Text = string.Empty;
+        }
+        protected void btnSortReset_Click(object sender, EventArgs e)
+        {
+            rProducts.DataSource = null;
+            rProducts.DataSource = (DataTable)Session["product"];
+            rProducts.DataBind();
+            ddlSortBy.ClearSelection();
+        }
+
     }
 }

@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="Shop.aspx.cs" Inherits="EcommerceSite.User.Shop" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="Shop.aspx.cs" EnableEventValidation="false" Inherits="EcommerceSite.User.Shop" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script>
         window.onload = function () {
             var seconds = 5;
             setTimeout(function () {
-                document.getElementById("<%#lblMsg.ClientID%>").style.display = "none";
+                document.getElementById("<%=lblMsg.ClientID%>").style.display = "none";
             }, seconds * 1000);
         };
     </script>
@@ -157,15 +157,23 @@
                         <div class="d-flex align-items-center justify-content-between mb-4">
                             <div action="">
                                 <div class="input-group">
-                                    <input type="text" id="txtSearchInput" runat="server" class="form-control" placeholder="Search by name" autocomplete="off">
+                                                                            <asp:TextBox
+                                                                                ID="txtSearchInput"
+                                                                                runat="server"
+                                                                                CssClass="form-control"
+                                                                                ClientIDMode="Static"
+                                                                                Placeholder="Search by name"
+                                                                                AutoCompleteType="Disabled" />
+
                                     <div class="input-group-append">
                                         <%-- <span class="input-group-text bg-transparent text-primary">
                                             <i class="fa fa-search"></i>
                                         </span>--%>
-                                        <asp:LinkButton ID="btnSearch" runat="server" CssClass="input-group-text bg-transparent text-primary">
+                                        <asp:LinkButton ID="btnSearch" runat="server" OnClick="btnSearch_Click" CssClass="input-group-text bg-transparent text-primary">
                                             <i class="fa fa-search"></i>
                                         </asp:LinkButton>
-                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="input-group-text bg-transparent text-primary">
+
+                                        <asp:LinkButton ID="btnReset" runat="server" OnClick="btnReset_Click" CssClass="input-group-text bg-transparent text-primary">
                                              <i class="fas fa-sync-alt"></i>
                                         </asp:LinkButton>
                                     </div>
@@ -183,13 +191,14 @@
       <a class="dropdown-item" href="#">Popularity</a>
       <a class="dropdown-item" href="#">Best Rating</a>
   </div>--%>
-                                    <asp:DropDownList ID="ddlSortBy" runat="server" CssClass="form-control" AppendDataBoundItems="true">
+                                    <asp:DropDownList ID="ddlSortBy" runat="server" CssClass="form-control" AppendDataBoundItems="true" AutoPostBack="true"
+                                        OnSelectedIndexChanged="ddlSortBy_SelectedIndexChanged">
                                         <asp:ListItem Value="0">Sort By</asp:ListItem>
                                         <asp:ListItem Value="1">Latest</asp:ListItem>
                                         <asp:ListItem Value="2">A to Z</asp:ListItem>
                                         <asp:ListItem Value="3">Price</asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:LinkButton ID="btnSortReset" runat="server" CssClass="input-group-text bg-transparent text-primary">
+                                    <asp:LinkButton ID="btnSortReset" runat="server" CssClass="input-group-text bg-transparent text-primary" OnClick="btnSortReset_Click" >
                                       <i class="fas fa-sync-alt"></i>
                                     </asp:LinkButton>
                                 </div>
@@ -200,7 +209,7 @@
                     <asp:Repeater ID="rProducts" runat="server">
                         <ItemTemplate>
                         <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                            <div class="card product-item border-0 mb-4">
+                            <div class="card product-item border-0 mb-4 h-100">
                                 <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                                     <img class="img-fluid w-100" src='<%# EcommerceSite.clsUtils.GetImageUrl(Eval("ImageURL")) %>' alt="">
                                 </div>

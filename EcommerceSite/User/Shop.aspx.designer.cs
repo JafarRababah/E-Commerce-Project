@@ -30,7 +30,7 @@ namespace EcommerceSite.User
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSearchInput;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchInput;
 
         /// <summary>
         /// btnSearch control.
@@ -42,13 +42,13 @@ namespace EcommerceSite.User
         protected global::System.Web.UI.WebControls.LinkButton btnSearch;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// btnReset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton btnReset;
 
         /// <summary>
         /// ddlSortBy control.

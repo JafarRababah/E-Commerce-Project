@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcommerceSite.Admin;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -22,7 +23,18 @@ namespace EcommerceSite.User
         {
             if (!IsPostBack)
             {
-                getAllProducts();
+                if (Request.QueryString["cid"]!= null)
+                {
+                    getAllProductsByCategory();
+                }
+               else  if (Request.QueryString["sid"] != null)
+                {
+                    getAllProductsBySubCategory();
+                }
+                else
+                {
+                    getAllProducts();
+                }
             }
         }
         void getAllProducts()
@@ -56,6 +68,74 @@ namespace EcommerceSite.User
             catch (Exception ex)
             {
                 Response.Write("<script>alert('"+ ex.Message+ "')</script>");
+            }
+        }
+        void getAllProductsByCategory()
+        {
+            try
+            {
+                int categoryId=Convert.ToInt32(Request.QueryString["cid"]);
+                using (con = new SqlConnection(clsUtils.GetConnection()))
+                {
+                    cmd = new SqlCommand("sp_Product", con);
+                    cmd.Parameters.AddWithValue("@Action", "ProductByCategory");
+                    cmd.Parameters.AddWithValue("@CategoryID", categoryId);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    adapter = new SqlDataAdapter(cmd);
+                    tbl = new DataTable();
+                    adapter.Fill(tbl);
+                    if (tbl.Rows.Count > 0)
+                    {
+                        rProducts.DataSource = tbl;
+                    }
+                    else
+                    {
+                        rProducts.DataSource = tbl;
+                        rProducts.FooterTemplate = null;
+                        rProducts.FooterTemplate = new CustomTemlate(ListItemType.Footer);
+                    }
+                    rProducts.DataBind();
+                    Session["product"] = tbl;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+            }
+        }
+        void getAllProductsBySubCategory()
+        {
+            try
+            {
+                using (con = new SqlConnection(clsUtils.GetConnection()))
+                {
+                    int subCategoryId = Convert.ToInt32(Request.QueryString["sid"]);
+                    cmd = new SqlCommand("sp_Product", con);
+                    cmd.Parameters.AddWithValue("@Action", "ProductBySubCategory");
+                    cmd.Parameters.AddWithValue("@SubCategoryID", subCategoryId);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    adapter = new SqlDataAdapter(cmd);
+                    tbl = new DataTable();
+                    adapter.Fill(tbl);
+                    if (tbl.Rows.Count > 0)
+                    {
+                        rProducts.DataSource = tbl;
+                    }
+                    else
+                    {
+                        rProducts.DataSource = tbl;
+                        rProducts.FooterTemplate = null;
+                        rProducts.FooterTemplate = new CustomTemlate(ListItemType.Footer);
+                    }
+                    rProducts.DataBind();
+                    Session["product"] = tbl;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
             }
         }
         private sealed class CustomTemlate : ITemplate

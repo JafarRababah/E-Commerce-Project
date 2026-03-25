@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="EcommerceSite.User.Default" %>
+
 <%@ Import Namespace="EcommerceSite" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
+
     <!-- Featured Start -->
     <div class="container-fluid pt-5">
         <div class="row px-xl-5 pb-3">
@@ -42,18 +42,24 @@
         <div class="row px-xl-5 pb-3">
             <asp:Repeater ID="rCategory" runat="server">
                 <ItemTemplate>
-                       <div class="col-lg-4 col-md-6 pb-1">
-       <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
-           <p class="text-right"><%# Eval("ProductCount") %> Products</p>
-           <a href="Shop.aspx?cid=<%# Eval("CategoryID") %>" class="cat-img position-relative overflow-hidden mb-3">
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                            <p class="text-right"><%# Eval("ProductCount") %> Products</p>
+                            <%-- <a href="Shop.aspx?cid=<%# Eval("CategoryID") %>" class="cat-img position-relative overflow-hidden mb-3">
                <img class="img-fluid" src="<%#clsUtils.GetImageUrl( Eval("CategoryImage")) %>" alt="">
-           </a>
-           <h5 class="font-weight-semi-bold m-0"><%# Eval("CategoryName") %></h5>
-       </div>
-   </div>
+           </a>--%>
+                            <a href="Shop.aspx?cid=<%# Eval("CategoryID") %>" class="cat-img-wrapper">
+                                <img src="<%#clsUtils.GetImageUrl(Eval("CategoryImage")) %>" alt="">
+                            </a>
+
+
+
+                            <h5 class="font-weight-semi-bold m-0"><%# Eval("CategoryName") %></h5>
+                        </div>
+                    </div>
                 </ItemTemplate>
             </asp:Repeater>
-         
+
         </div>
     </div>
     <!-- Categories End -->
@@ -110,7 +116,7 @@
     <!-- Subscribe End -->
 
 
-    
+
 
 
     <!-- Vendor Start -->

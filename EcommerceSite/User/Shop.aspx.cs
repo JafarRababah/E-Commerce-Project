@@ -43,7 +43,6 @@ namespace EcommerceSite.User
             {
                 using (con = new SqlConnection(clsUtils.GetConnection()))
                 {
-                    con.Open();
                     cmd = new SqlCommand("sp_Product", con);
                     cmd.Parameters.AddWithValue("@Action", "ActiveProduct");
                     cmd.CommandType = CommandType.StoredProcedure;

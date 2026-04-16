@@ -656,6 +656,7 @@
     <Content Include="User\Checkout.aspx" />
     <Content Include="User\Contact.aspx" />
     <Content Include="User\Default.aspx" />
+    <Content Include="User\Registration.aspx" />
     <Content Include="User\Shop.aspx" />
     <Content Include="User\ShopDetails.aspx" />
     <Content Include="Web.config" />
@@ -744,6 +745,13 @@
     </Compile>
     <Compile Include="User\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Shop.aspx.cs">
       <DependentUpon>Shop.aspx</DependentUpon>
@@ -1111,6 +1119,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Images\Category\" />
     <Folder Include="Images\Product\" />
+    <Folder Include="Images\User\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

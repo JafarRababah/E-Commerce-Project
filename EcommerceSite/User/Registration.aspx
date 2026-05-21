@@ -12,6 +12,7 @@
 <script>
     function ImagePreview(input) {
         if (input.files && input.files[0]) {
+            $('#<%=imgUser.ClientID%>').show();
             var reader = new FileReader();
             reader.onload = function (e) {
                 $('#<%=imgUser.ClientID%>').prop('src', e.target.result)
@@ -58,16 +59,16 @@
                         <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email is required"
                             ControlToValidate="txtEmail" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:RequiredFieldValidator>
                         <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter Email" ToolTip="Email"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="Name Must be characters" ForeColor="Red"
+                        <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="Must be Email" ForeColor="Red"
                             Display="Dynamic" SetFocusOnError="true" Font-Size="Small" ControlToValidate="txtName"
                             ValidationExpression="^[a-zA-Z\s]*$"></asp:RegularExpressionValidator>
                     </div>
                     <div class="pb-3">
-                        <asp:RequiredFieldValidator ID="rfvMobile" runat="server" ErrorMessage="Mobile No. is required"
+                        <asp:RequiredFieldValidator ID="rfvMobile" runat="server" ErrorMessage="Mobile No. is must be 10 digits"
                             ControlToValidate="txtMobile" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:RequiredFieldValidator>
-                        <asp:TextBox ID="txtMobile" runat="server" CssClass="form-control" placeholder="Enter Mobile No." ToolTip="Mobile"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="revMobile" runat="server" ErrorMessage="Name Must be numbers" ForeColor="Red"
-                            Display="Dynamic" SetFocusOnError="true" ControlToValidate="txtMobile" ValidationExpression="^[0-9](10)"></asp:RegularExpressionValidator>
+                        <asp:TextBox ID="txtMobile" runat="server" CssClass="form-control"  placeholder="Enter Mobile No." ToolTip="Mobile"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="revMobile" runat="server" ErrorMessage="Must be numbers" ForeColor="Red"
+                            Display="Dynamic" SetFocusOnError="true" ControlToValidate="txtMobile" ValidationExpression="^[0-9]{10}"></asp:RegularExpressionValidator>
                     </div>
                 </div>
 
@@ -87,9 +88,9 @@
               <asp:RequiredFieldValidator ID="rfvPostCode" runat="server" ErrorMessage="PostCode is required"
                   ControlToValidate="txtPostCode" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:RequiredFieldValidator>
               <asp:TextBox ID="txtPostCode" runat="server" CssClass="form-control" placeholder="Enter PostCode" ToolTip="PostCode"></asp:TextBox>
-              <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Name Must be characters" ForeColor="Red"
+              <asp:RegularExpressionValidator ID="revPostCode" runat="server" ErrorMessage="Must be numbers" ForeColor="Red"
                   Display="Dynamic" SetFocusOnError="true" Font-Size="Small" ControlToValidate="txtPostCode"
-                  ValidationExpression="^[0-9](6)$"></asp:RegularExpressionValidator>
+                  ValidationExpression="^[0-9]{6}$"></asp:RegularExpressionValidator>
           </div>
           <div class="pb-3">
               <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ErrorMessage="Password is required"
